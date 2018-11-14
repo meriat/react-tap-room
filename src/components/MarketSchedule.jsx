@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 
 function MarketScedule(props) {
   return (
-          <tr>
+    <tr>
 
-            <td>{props.days}</td>
-            <td>{props.location}</td>
-            <td>{props.hours}</td>
-            <td>{props.booths}</td>
-          </tr>
+      <td>{props.days}</td>
+      <td>{props.location}</td>
+      <td>{props.hours}</td>
+      <td>{props.booths}</td>
+    </tr>
   );
 }
 
