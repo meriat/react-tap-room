@@ -1,17 +1,17 @@
 import React from 'react';
 import Header from './Header';
-import TicketList from './TicketList';
+import MarketSceduleList from './MArketScheduleList';
 function App(){
   return (
     <div>
-    <style global jsx> {`
+      <style global jsx> {`
       body{
-        background-color: black;
+        background-color: pink;
       }
       `}
-    </style>
+      </style>
       <Header/>
-      <TicketList/>
+      <MarketSceduleList/>
       <hr/>
     </div>
   );

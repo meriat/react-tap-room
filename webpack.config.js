@@ -39,7 +39,11 @@ module.exports = {
         options: {
           emitWarning: true,
           configFile: "./.eslintrc.json"
-          }
+          },
+        },
+        {
+          test:/\.css$/,
+          use:['style-loader','css-loader']
         },
         {
         test: /\.jsx?$/,
