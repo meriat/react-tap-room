@@ -273,6 +273,12 @@ const availableProduce = [
 function ProduceList() {
   return (
     <div className='container'>
+      <style jsx> {`
+    h1{
+      text-align:center;
+    }
+    `}</style>
+      <h1>Avery's Seasonal Produce</h1>
       <div className="row">
         {availableProduce.map((produce, index) =>
           <AvailableProduce months = {produce.month}

@@ -43,6 +43,24 @@ const marketSchedule = [
 function MarketSceduleList() {
   return (
     <div className="container">
+      <style jsx>{`
+       .table {
+        background-color: rgba(160,232,208, 0.7);
+         color: #AF4F25;
+       
+       }
+       h1{
+         text-align: center;
+       }
+       thead{
+         font-size:27px;
+       }
+       tbody{
+         font-weight:bold;
+       }
+      `}
+      </style>
+      <h1>Avery's Schedule</h1>
       <table className="table">
         <thead>
           <tr>
