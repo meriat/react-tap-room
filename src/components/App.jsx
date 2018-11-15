@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import MarketSceduleList from './MArketScheduleList';
 import ProduceList from './ProduceList';
+import { Switch, Route } from 'react-router-dom';
 
 function App(){
   return (
@@ -17,8 +18,10 @@ function App(){
       `}
       </style>
       <Header/>
-      <MarketSceduleList/>
-      <ProduceList/>
+        <Switch>
+          <Route exact path='/' component={MarketSceduleList} />
+          <Route path='/months' component={ProduceList} />
+        </Switch>
       <hr/>
     </div>
   );
