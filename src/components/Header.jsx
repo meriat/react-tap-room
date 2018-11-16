@@ -9,7 +9,7 @@ function Header(){
       text-align: center;
       margin-top: 4%;
       .jumbotron {
-        background-color: rgba(207,201,165, 0.5);
+        background-color: rgba(255, 228, 25, 0.5);
         padding-top: 0px;
         padding-bottom: 10px;
         font-family: 'Homemade Apple', cursive;

@@ -8,8 +8,8 @@ function EditBeer() {
     .container {
         background-color: rgba(0,0,0,0.6);
         box-shadow: 8px 0 50px 5px white;
-        color:#ccddff;
-        margin-top: 20px;
+        color:#ebf441;
+        margin-top: 40px;
     }
     input{
         width: 80%;
@@ -17,6 +17,8 @@ function EditBeer() {
     }
     button{
         margin-bottom: 10px;
+        background-color: #7808ce;
+        color:#ebf441;
     }
     form{
         margin-left: 16%;
@@ -36,7 +38,7 @@ function EditBeer() {
         <input className='form-control' type='text' id='abv' placeholder='ABV' />
         <input className='form-control' type='text' id='price' placeholder='price' />
         <input className='form-control' type='text' id='pint' placeholder='pint' /><br/>
-        <button className='btn btn-warning'>Edit Beer</button>
+        <button className='btn'>Edit Beer</button>
       </form>
     </div>
   );

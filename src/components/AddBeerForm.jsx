@@ -8,20 +8,21 @@ function AddBeerForm() {
                 .container {
                     background-color: rgba(0,0,0,0.6);
                     box-shadow: 8px 0 50px 5px white;
-                    color:#ccddff;
-                    margin-top: 20px;
+                    color:#ebf441;
+                    margin-top: 40px;
                 }
                 label{
                     font-size: 20px;
                     font-weight: bold;
-                    color: white;
-                    font-family: 'Homemade Apple', cursive;
+                    color: #ebf441;
                 }
                 input{
                     width: 80%;
                 }
                 button{
                     margin-bottom: 10px;
+                    background-color: #7808ce;
+                    color:#ebf441;
                 }
                 form{
                     margin-left: 16%;
@@ -46,7 +47,7 @@ function AddBeerForm() {
         <input className='form-control' type='text' id='price' placeholder='price' />
         <label>Pint</label>
         <input className='form-control' type='text' id='pint' placeholder='pint' /><br/>
-        <button className='btn btn-success'>Add Beer</button>
+        <button className='btn'>Add Beer</button>
       </form>
     </div>
 
