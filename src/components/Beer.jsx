@@ -6,6 +6,10 @@ function Beer(props) {
         button: {
             backgroundColor: '#0044cc',
             color: 'white',
+        },
+        edit: {
+            backgroundColor: '#e6005c',
+            color: 'white'
         }
     }
   return(
@@ -16,7 +20,7 @@ function Beer(props) {
         <td>{props.abv}</td>
         <td>{props.price}</td>
         <td><button className='btn' style={ButtonStyle.button}>{props.pint}</button></td>
-        <td><button className='btn' style={ButtonStyle.button}>Edit</button></td>
+        <td><button className='btn' style={ButtonStyle.edit}>Edit</button></td>
       </tr>
   );
 }
