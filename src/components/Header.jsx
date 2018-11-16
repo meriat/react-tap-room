@@ -12,9 +12,9 @@ function Header(){
         background-color: rgba(207,201,165, 0.5);
         padding-top: 0px;
         padding-bottom: 10px;
+        font-family: 'Homemade Apple', cursive;
       }
       h1{
-        font-family: 'Damion', cursive;
         font-weight: bold;
         font-size:60px;
         color: black;
@@ -25,12 +25,17 @@ function Header(){
       img{
         width: 8%;        
       }
+      .banner {
+        background-color: black;
+      }
       `} </style>
       <div className="jumbotron">
         <img src='https://melbournechapter.net/images/beer-tap-clipart-3.png'/>
         <h1>Cocorocco Bar</h1>
       </div>
+      <div className='banner'>
       <Link className='btn btn-secondary' to='/'>Home</Link> | <Link className='btn btn-secondary'to='/addBeer'>Add Beer</Link>
+      </div>
     </div>
   );
 }

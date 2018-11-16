@@ -15,6 +15,7 @@ function AddBeerForm() {
                     font-size: 20px;
                     font-weight: bold;
                     color: white;
+                    font-family: 'Homemade Apple', cursive;
                 }
                 input{
                     width: 80%;
