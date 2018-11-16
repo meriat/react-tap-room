@@ -1,5 +1,5 @@
 import React from 'react';
-// import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 function Header(){
   return (
@@ -18,7 +18,7 @@ function Header(){
       }
       `} </style>
       <h1 className="jumbotron">Cocorocco Bar</h1>
-      {/* <Link className='btn btn-secondary' to='/'>Home</Link> | <Link className='btn btn-secondary'to='/months'>Seasonal Availability</Link> */}
+      <Link className='btn btn-secondary' to='/'>Home</Link> | <Link className='btn btn-secondary'to='/beerList'>Beer List</Link>
     </div>
   );
 }
