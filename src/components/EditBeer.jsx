@@ -1,11 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-function EditBeer(props) {
+function EditBeer() {
   return(
     <div className='container'>
-    <style jsx>
-    {`
+      <style jsx>
+        {`
     .container {
         background-color: rgba(0,0,0,0.6);
         box-shadow: 8px 0 50px 5px white;
@@ -28,8 +27,8 @@ function EditBeer(props) {
         padding-top: 20px;
     }
     `}
-    </style>
-    <h1>Edit Beer</h1>
+      </style>
+      <h1>Edit Beer</h1>
       <form>   
         <input className='form-control' type='text' id='name' placeholder='Name'  />
         <input className='form-control' type='text' id='brewer' placeholder='Brewer' />

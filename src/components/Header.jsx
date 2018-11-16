@@ -27,6 +27,14 @@ function Header(){
       }
       .banner {
         background-color: black;
+        padding: 10px;
+      }
+      .foo{
+        color:white;
+        font-size: 22px;
+      }
+      .foo:hover{
+        color: red;
       }
       `} </style>
       <div className="jumbotron">
@@ -34,7 +42,9 @@ function Header(){
         <h1>Cocorocco Bar</h1>
       </div>
       <div className='banner'>
-      <Link className='btn btn-secondary' to='/'>Home</Link> | <Link className='btn btn-secondary'to='/addBeer'>Add Beer</Link>
+        <Link className='btn' to='/'><span className='foo'>
+        Home</span></Link> <Link className='btn'to='/addBeer'><span className='foo'>
+        Add Beer</span></Link>
       </div>
     </div>
   );
