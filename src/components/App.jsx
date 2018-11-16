@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import { Switch, Route } from 'react-router-dom';
 import BeerList from './BeerList';
+import AddBeerForm from './AddBeerForm';
 
 function App(){
   return (
@@ -19,6 +20,7 @@ function App(){
       <Header/>
       <Switch> 
         <Route exact path='/' component={BeerList} />
+        <Route path='/addBeer' component={AddBeerForm} />
       </Switch>
       <hr/>
     </div>

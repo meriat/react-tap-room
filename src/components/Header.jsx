@@ -30,7 +30,7 @@ function Header(){
       <img src='https://melbournechapter.net/images/beer-tap-clipart-3.png'/>
       <h1>Cocorocco Bar</h1>
       </div>
-      <Link className='btn btn-secondary' to='/'>Home</Link> | <Link className='btn btn-secondary'to='/beerList'>Beer List</Link>
+      <Link className='btn btn-secondary' to='/'>Home</Link> | <Link className='btn btn-secondary'to='/addBeer'>Add Beer</Link>
     </div>
   );
 }
