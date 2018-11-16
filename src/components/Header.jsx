@@ -16,12 +16,9 @@ function Header(){
         color: #045905;
         text-shadow: 2px 2px 8px white;
       }
-      Link {
-
-      }
       `} </style>
-      <h1 className="jumbotron">Avery's Organics</h1>
-      <Link className='btn btn-secondary' to='/'>Home</Link> | <Link className='btn btn-secondary'to='/months'>Seasonal Availability</Link>
+      <h1 className="jumbotron">Cocorocco</h1>
+      {/* <Link className='btn btn-secondary' to='/'>Home</Link> | <Link className='btn btn-secondary'to='/months'>Seasonal Availability</Link> */}
     </div>
   );
 }
