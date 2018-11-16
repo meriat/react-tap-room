@@ -10,11 +10,14 @@ function App(){
       body{
         
       }
+      .btn{
+        margin: 0.5em;
+      }
       `}
       </style>
       <Header/>
       <Switch> 
-      <Route exact path='/' component={BeerList} />
+        <Route exact path='/' component={BeerList} />
       </Switch>
       <hr/>
     </div>
