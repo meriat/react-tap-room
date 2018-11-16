@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
 function Beer(props) {
     const ButtonStyle = {
@@ -20,7 +21,7 @@ function Beer(props) {
         <td>{props.abv}</td>
         <td>{props.price}</td>
         <td><button className='btn' style={ButtonStyle.button}>{props.pint}</button></td>
-        <td><button className='btn' style={ButtonStyle.edit}>Edit</button></td>
+        <td><Link to='/edit'><button className='btn' style={ButtonStyle.edit}>Edit</button></Link></td>
       </tr>
   );
 }
