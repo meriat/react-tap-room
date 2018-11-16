@@ -16,6 +16,7 @@ function Beer(props) {
         <td>{props.abv}</td>
         <td>{props.price}</td>
         <td><button className='btn' style={ButtonStyle.button}>{props.pint}</button></td>
+        <td><button className='btn' style={ButtonStyle.button}>Edit</button></td>
       </tr>
   );
 }

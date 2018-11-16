@@ -9,6 +9,7 @@ function AddBeerForm() {
                     background-color: rgba(0,0,0,0.6);
                     box-shadow: 8px 0 50px 5px white;
                     color:#ccddff;
+                    margin-top: 20px;
                 }
                 label{
                     font-size: 20px;

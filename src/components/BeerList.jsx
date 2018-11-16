@@ -88,6 +88,7 @@ function BeerList() {
             <th>ABV</th>
             <th>Price</th>
             <th>Pint</th>
+            <th>Edit</th>
           </tr>
         </thead>
         <tbody>
