@@ -7,13 +7,13 @@ function Header(){
       <style jsx>{`
       color:white;
       text-align: center;
-      margin-top: 8%;
+      margin-top: 4%;
       .jumbotron {
         background-color: rgba(235,28,35, 0.4);
         font-family: 'Damion', cursive;
         font-weight: bold;
         font-size:70px;
-        color: #045905;
+        color: black;
         text-shadow: 2px 2px 8px white;
       }
       `} </style>

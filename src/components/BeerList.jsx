@@ -59,8 +59,18 @@ function BeerList() {
     <div className='container'>
     <style jsx>
     {`
-    .btn{
-        padding: 3px;
+    table{
+        background-color: rgba(0,0,0,0.6);
+        box-shadow: 7px 0 50px 5px white;
+        color:white;
+    }
+    th{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    tbody{
+        font-weight: bold;
+        font-size: 18px;
     }
     `}
     </style>

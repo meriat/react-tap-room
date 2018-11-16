@@ -8,7 +8,11 @@ function App(){
     <div>
       <style global jsx> {`
       body{
-        
+        background-image: url('https://bestscreenwallpaper.pro/wp-content/uploads/2013/09/Beer-wallpapers-Free-picture-Multi-cap.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+
       }
       .btn{
         margin: 0.5em;
