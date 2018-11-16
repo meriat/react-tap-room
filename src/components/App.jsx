@@ -3,6 +3,7 @@ import Header from './Header';
 import { Switch, Route } from 'react-router-dom';
 import BeerList from './BeerList';
 import AddBeerForm from './AddBeerForm';
+import EditBeer from './EditBeer';
 
 function App(){
   return (
@@ -13,7 +14,7 @@ function App(){
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-
+        font-family: 'Josefin Sans', sans-serif;
       }
       `}
       </style>
@@ -21,6 +22,7 @@ function App(){
       <Switch> 
         <Route exact path='/' component={BeerList} />
         <Route path='/addBeer' component={AddBeerForm} />
+        <Route path='/edit' component={EditBeer} />
       </Switch>
       <hr/>
     </div>

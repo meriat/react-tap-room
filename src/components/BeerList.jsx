@@ -57,8 +57,8 @@ const state = {
 function BeerList() {
   return (
     <div className='container'>
-    <style jsx>
-    {`
+      <style jsx>
+        {`
     table{
         background-color: rgba(0,0,0,0.6);
         box-shadow: 7px 0 50px 5px white;
@@ -77,8 +77,8 @@ function BeerList() {
         text-align: center;
     }
     `}
-    </style>
-    <h1>Beer List</h1>
+      </style>
+      <h1>Beer List</h1>
       <table className="table">
         <thead>
           <tr>
