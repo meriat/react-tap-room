@@ -14,9 +14,6 @@ function App(){
         background-size: cover;
 
       }
-      .btn{
-        margin: 0.5em;
-      }
       `}
       </style>
       <Header/>

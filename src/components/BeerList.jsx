@@ -62,7 +62,7 @@ function BeerList() {
     table{
         background-color: rgba(0,0,0,0.6);
         box-shadow: 7px 0 50px 5px white;
-        color:white;
+        color:#ccddff;
     }
     th{
         font-weight: bold;
@@ -72,8 +72,13 @@ function BeerList() {
         font-weight: bold;
         font-size: 18px;
     }
+    h1{
+        color: white;
+        text-align: center;
+    }
     `}
     </style>
+    <h1>Beer List</h1>
       <table className="table">
         <thead>
           <tr>
