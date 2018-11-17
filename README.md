@@ -3,7 +3,7 @@
 #### By Meria Thomas
 ## Component Structure
 
-![screen shot](./src/img/Chapture.PNG)
+![screen shot](./src/img/Capture.PNG)
 
 ## Description
 An app that displays a list of beer and also let's the employees edit and add beer to the list
