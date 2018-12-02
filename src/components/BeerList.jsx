@@ -89,23 +89,23 @@ function BeerList(props) {
           </tr>
         </thead>
         <tbody>
-          {masterKegList.map((keg, index) =>
+          {masterKegList.map((keg) =>
             <Beer name={keg.name}
               brewer={keg.brewer}
               description={keg.description}
               abv={keg.abv}
               price={keg.price}
               pint={keg.pint}
-              key={index} />
+              key={keg.id} />
           )}
-          {props.beerList.map((keg, index) =>
+          {props.beerList.map((keg) =>
             <Beer name={keg.name}
               brewer={keg.brewer}
               description={keg.description}
               abv={keg.abv}
               price={keg.price}
               pint={keg.pint}
-              key={index} />
+              key={keg.id} />
           )}
         </tbody>
       </table>
