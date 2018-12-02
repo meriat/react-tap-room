@@ -1,23 +1,24 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function AddBeerForm(props) {
-    let _name = null;
-    let _brewer = null;
-    let _description = null;
-    let _abv = null;
-    let _price = null;
-    let _pint = null;
+  let _name = null;
+  let _brewer = null;
+  let _description = null;
+  let _abv = null;
+  let _price = null;
+  let _pint = null;
 
-    function handleAddBeerFormSubmission(event) {
-        event.preventDefault();
-        props.onNewBeerCreation({name: _name.value, brewer: _brewer.value, description: _description.value, abv: _abv.value, price: _price.value, pint: _pint.value})
-        _name.value = '';
-        _brewer.value = '';
-        _description.value = '';
-        _abv.value = '';
-        _price.value = '';
-        _pint.value = '';
-    }
+  function handleAddBeerFormSubmission(event) {
+    event.preventDefault();
+    props.onNewBeerCreation({name: _name.value, brewer: _brewer.value, description: _description.value, abv: _abv.value, price: _price.value, pint: _pint.value});
+    _name.value = '';
+    _brewer.value = '';
+    _description.value = '';
+    _abv.value = '';
+    _price.value = '';
+    _pint.value = '';
+  }
 
   return (
     <div className='container'>
@@ -73,7 +74,7 @@ function AddBeerForm(props) {
 }
 
 AddBeerForm.propTypes = {
-    onNewBeerCreation: PropTypes.func
-}
+  onNewBeerCreation: PropTypes.func
+};
 
 export default AddBeerForm;

@@ -40,7 +40,7 @@ class NewBeerControl extends React.Component {
 }
 
 NewBeerControl.propTypes = {
-    onNewBeerCreation: PropTypes.func
+  onNewBeerCreation: PropTypes.func
 };
   
 export default NewBeerControl;
