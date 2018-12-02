@@ -1,6 +1,6 @@
 import React from 'react';
 
-function AddBeerForm() {
+function AddBeerForm(props) {
     let _name = null;
     let _brewer = null;
     let _description = null;
@@ -69,6 +69,10 @@ function AddBeerForm() {
     </div>
 
   );
+}
+
+AddBeerForm.propTypes = {
+    onNewBeerCreation: PropTypes.func
 }
 
 export default AddBeerForm;
