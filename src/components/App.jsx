@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import BeerList from './BeerList';
 import AddBeerForm from './AddBeerForm';
 import EditBeer from './EditBeer';
+import Error404 from './Error404';
 
 function App(){
   return (
@@ -23,6 +24,7 @@ function App(){
         <Route exact path='/' component={BeerList} />
         <Route path='/addBeer' component={AddBeerForm} />
         <Route path='/edit' component={EditBeer} />
+        <Route component= {Error404} />
       </Switch>
       <hr/>
     </div>
