@@ -10,12 +10,12 @@ function AddBeerForm() {
 
     function handleAddBeerFormSubmission(event) {
         event.preventDefault();
-        _name = '';
-        _brewer = '';
-        _description = '';
-        _abv = '';
-        _price = '';
-        _pint = '';
+        _name.value = '';
+        _brewer.value = '';
+        _description.value = '';
+        _abv.value = '';
+        _price.value = '';
+        _pint.value = '';
     }
 
   return (
@@ -51,7 +51,7 @@ function AddBeerForm() {
         `}
       </style>
       <h1>Add New Beer</h1>
-      <form onSubmit='handleAddBeerFormSubmission'>
+      <form onSubmit={handleAddBeerFormSubmission}>
         <label>Name</label>
         <input className='form-control' type='text' id='name' placeholder='Name' ref={(input) => {_name = input;}} />
         <label>Brewer</label>
