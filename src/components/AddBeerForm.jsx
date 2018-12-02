@@ -1,6 +1,23 @@
 import React from 'react';
 
 function AddBeerForm() {
+    let _name = null;
+    let _brewer = null;
+    let _description = null;
+    let _abv = null;
+    let _price = null;
+    let _pint = null;
+
+    function handleAddBeerFormSubmission(event) {
+        event.preventDefault();
+        _name = '';
+        _brewer = '';
+        _description = '';
+        _abv = '';
+        _price = '';
+        _pint = '';
+    }
+
   return (
     <div className='container'>
       <style jsx>
