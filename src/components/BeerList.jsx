@@ -9,7 +9,7 @@ var masterKegList= [
     description: 'Sparkling Wine & Grapefruit',
     abv: '6.8%',
     price: '7',
-    remaining: '20'
+    pint: '20'
   },
   {
     name: 'Tart N Juicy',
@@ -17,7 +17,7 @@ var masterKegList= [
     description: 'Sour IPA',
     abv: '4.5%',
     price: '6',
-    remaining: '60'
+    pint: '60'
   },
   {
     name: 'Hamm\'s',
@@ -25,7 +25,7 @@ var masterKegList= [
     description: 'American Lager',
     abv: '4.7%',
     price: '3',
-    remaining: '65'
+    pint: '65'
   },
   {
     name: 'Prismatic',
@@ -33,7 +33,7 @@ var masterKegList= [
     description: 'Juicy IPA',
     abv: '5.9%',
     price: '6',
-    remaining: '75'
+    pint: '75'
   },
   {
     name: 'Juicy Haze',
@@ -41,7 +41,7 @@ var masterKegList= [
     description: 'India Pale Ale',
     abv: '7.5%',
     price: '6',
-    remaining: '18'
+    pint: '18'
   },
   {
     name: '8 Hop',
@@ -49,7 +49,7 @@ var masterKegList= [
     description: 'Pale Ale',
     abv: '5.5%',
     price: '6',
-    remaining: '58'
+    pint: '58'
   }
 ];
 
@@ -95,7 +95,7 @@ function BeerList(props) {
               description={keg.description}
               abv={keg.abv}
               price={keg.price}
-              pint={keg.remaining}
+              pint={keg.pint}
               key={index} />
           )}
           {props.beerList.map((keg, index) =>
@@ -104,7 +104,7 @@ function BeerList(props) {
               description={keg.description}
               abv={keg.abv}
               price={keg.price}
-              pint={keg.remaining}
+              pint={keg.pint}
               key={index} />
           )}
         </tbody>
