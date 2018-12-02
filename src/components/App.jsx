@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import { Switch, Route } from 'react-router-dom';
 import BeerList from './BeerList';
-import AddBeerForm from './AddBeerForm';
+import NewBeerControl from './NewBeerControl';
 import EditBeer from './EditBeer';
 import Error404 from './Error404';
 
@@ -22,7 +22,7 @@ function App(){
       <Header/>
       <Switch> 
         <Route exact path='/' component={BeerList} />
-        <Route path='/addBeer' component={AddBeerForm} />
+        <Route path='/newBeer' component={NewBeerControl} />
         <Route path='/edit' component={EditBeer} />
         <Route component= {Error404} />
       </Switch>

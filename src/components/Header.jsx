@@ -43,7 +43,7 @@ function Header(){
       </div>
       <div className='banner'>
         <Link className='btn' to='/'><span className='foo'>
-        Home</span></Link> <Link className='btn'to='/addBeer'><span className='foo'>
+        Home</span></Link> <Link className='btn'to='/newBeer'><span className='foo'>
         Add Beer</span></Link>
       </div>
     </div>
