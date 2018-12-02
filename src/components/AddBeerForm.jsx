@@ -34,20 +34,20 @@ function AddBeerForm() {
         `}
       </style>
       <h1>Add New Beer</h1>
-      <form>
+      <form onSubmit='handleAddBeerFormSubmission'>
         <label>Name</label>
-        <input className='form-control' type='text' id='name' placeholder='Name' />
+        <input className='form-control' type='text' id='name' placeholder='Name' ref={(input) => {_name = input;}} />
         <label>Brewer</label>
-        <input className='form-control' type='text' id='brewer' placeholder='Brewer' />
+        <input className='form-control' type='text' id='brewer' placeholder='Brewer' ref={(input) => {_brewer = input;}}/>
         <label>Description</label>
-        <input className='form-control' type='text' id='description' placeholder='Description' />
+        <input className='form-control' type='text' id='description' placeholder='Description' ref={(input) => {_description = input;}}/>
         <label>ABV</label>
-        <input className='form-control' type='text' id='abv' placeholder='ABV' />
+        <input className='form-control' type='text' id='abv' placeholder='ABV' ref={(input) => {_abv = input;}}/>
         <label>Price</label>
-        <input className='form-control' type='text' id='price' placeholder='price' />
+        <input className='form-control' type='text' id='price' placeholder='price' ref={(input) => {_price = input;}}/>
         <label>Pint</label>
-        <input className='form-control' type='text' id='pint' placeholder='pint' /><br/>
-        <button className='btn'>Add Beer</button>
+        <input className='form-control' type='text' id='pint' placeholder='pint' ref={(input) => {_pint = input;}}/><br/>
+        <button className='btn' type='submit'>Add Beer</button>
       </form>
     </div>
 
