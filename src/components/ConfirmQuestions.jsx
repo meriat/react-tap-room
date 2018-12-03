@@ -5,7 +5,7 @@ function ConfirmQuestions(props){
   return (
     <div className='container'>
       <style jsx>
-      {`
+        {`
       .container{
         background-color: rgba(0,0,0,0.7);
         box-shadow: 7px 0 50px 5px white;

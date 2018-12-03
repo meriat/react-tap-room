@@ -96,6 +96,7 @@ function BeerList(props) {
               abv={keg.abv}
               price={keg.price}
               pint={keg.pint}
+              onReducingPint={props.onReducingPint}
               key={keg.id} />
           )}
           {props.beerList.map((keg) =>
@@ -105,6 +106,7 @@ function BeerList(props) {
               abv={keg.abv}
               price={keg.price}
               pint={keg.pint}
+              onReducingPint={props.onReducingPint}
               key={keg.id} />
           )}
         </tbody>
@@ -114,7 +116,8 @@ function BeerList(props) {
 }
 
 BeerList.propTypes = {
-  beerList: PropTypes.array
+  beerList: PropTypes.array,
+  onReducingPint: PropTypes.func
 };
 
 export default BeerList;

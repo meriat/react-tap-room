@@ -20,7 +20,7 @@ function Beer(props) {
       <td>{props.description}</td>
       <td>{props.abv}</td>
       <td>{props.price}</td>
-      <td><button className='btn' style={ButtonStyle.button}>{props.pint}</button></td>
+      <td><button onClick={() => {props.onReducingPint;}}className='btn' style={ButtonStyle.button}>{props.pint}</button></td>
       <td><Link to='/edit'><button className='btn' style={ButtonStyle.edit}>Edit</button></Link></td>
     </tr>
   );
@@ -32,7 +32,8 @@ Beer.propTypes = {
   description: PropTypes.string,
   abv: PropTypes.string,
   price: PropTypes.string,
-  pint: PropTypes.string
+  pint: PropTypes.string,
+  onReducingPint: PropTypes.func
 };
 
 export default Beer;

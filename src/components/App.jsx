@@ -11,15 +11,22 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterKegList: []
+      masterKegList: [],
+      reducePint: null
     };
     this.handleAddingNewBeerToList = this.handleAddingNewBeerToList.bind(this);
+    this.handleReducingPint = this.handleReducingPint.bind(this);
   }
 
   handleAddingNewBeerToList(newBeer) {
     var newMasterKegList = this.state.masterKegList.slice();
     newMasterKegList.push(newBeer);
     this.setState({masterKegList: newMasterKegList});
+  }
+
+  handleReducingPint(keg) {
+    this.setState({reducePint: keg});
+    alert(this.state.reducePint.keg -1);
   }
 
   render(){
@@ -37,7 +44,7 @@ class App extends React.Component {
         </style>
         <Header/>
         <Switch> 
-          <Route exact path='/' render={()=> <BeerList beerList = {this.state.masterKegList} />} />
+          <Route exact path='/' render={()=> <BeerList beerList = {this.state.masterKegList} onReducingPint = {this.state.handleReducingPint} />} />
           <Route path='/newBeer' render={()=> <NewBeerControl onNewBeerCreation={this.handleAddingNewBeerToList}/>} />
           <Route path='/edit' component={EditBeer} />
           <Route component= {Error404} />

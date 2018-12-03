@@ -18,6 +18,10 @@ An app that displays a list of beer and also let's the employees edit and add be
 
 Run `npm run start` for a dev server. Navigate to `http://localhost:8080/`. The app will automatically reload if you change any of the source files.
 
+## In progress
+- Reduce pint button by 1 when clicked
+- Let the employee edit a beer
+
 ## Technologies Used
 
 - jsx
